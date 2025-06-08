@@ -4,6 +4,9 @@ body {
   padding: 0;
   line-height: 1.6;
   background-color: #e2f1f1;
+    
+   
+  
 }
 
 header {
@@ -169,4 +172,5 @@ form button:hover {
   .contact {
     text-align: center;
   }
+
 }
