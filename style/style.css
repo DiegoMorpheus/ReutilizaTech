@@ -85,12 +85,16 @@ footer p i {
   padding: 1rem;
   text-align: center;
   width: 100%; /* Garante ajuste automático */
-  height: 100%;
+  height: auto; /* Ajusta automaticamente ao tamanho da imagem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 .grid img {
-  max-width: 100%; /* Garante ajuste automático */
-  height: 100%;
+  max-width: 100%;
+  height: auto; /* Mantém proporções corretas */
+  object-fit: contain; /* Garante que a imagem se encaixe sem cortes */
 }
 
 form {
