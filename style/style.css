@@ -131,11 +131,11 @@ form button:hover {
   border-radius: 5px; 
 }
 
-/*.button img {
+.button img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Garante que a imagem se encaixe corretamente */
-}*/
+}
 
 .button:hover {
   background-color: #3998b3;
