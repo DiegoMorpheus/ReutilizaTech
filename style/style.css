@@ -85,7 +85,7 @@ footer p i {
   padding: 1rem;
   text-align: center;
   max-width: 100%; /* Garante ajuste automático */
-  height: auto;
+  height: 100%;
 
 }
 .grid img {
@@ -119,24 +119,23 @@ form button:hover {
 }
 
   
-.button {
-  display: block;
-  width: 100%; /* Igual ao tamanho da imagem */
-  height: 100%; /* Igual ao tamanho da imagem */
-  padding: 0; /* Remover espaçamento interno */
-  font-size: 16px;
-  color: black;
-  background-color: #d4f8a9;
-  text-decoration: none;
-  border: 2px solid black;
-  border-radius: 5px;
+.button { 
+  display: flex; 
+  flex-direction: column; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  color: black; 
+  background-color: #d4f8a9; 
+  text-decoration: none; 
+  border: 2px solid black; 
+  border-radius: 5px; 
 }
 
-.button img {
+/*.button img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Garante que a imagem se encaixe corretamente */
-}
+}*/
 
 .button:hover {
   background-color: #3998b3;
