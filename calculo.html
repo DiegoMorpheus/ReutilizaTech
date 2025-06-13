@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre - Meu Site</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+   <header>
+      <div class="logo"><a href="index.html"><input type = "image" src = "img/Logo-48-48.jpg"></a> ReutilizaTech</div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="active"
+              ><i class="fas fa-home"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="sobre.html"><i class="fas fa-info-circle"></i> Nossa Visão</a>
+          </li>
+          <li>
+            <a href="contato.html"><i class="fas fa-envelope"></i> Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="about">
+        <h2>Calcule e Reduza Seus Resíduos Orgânicos!</h2>
+        <p>
+            Transforme resíduos em soluções sustentáveis! Nosso site ajuda você a calcular a quantidade de resíduos orgânicos gerados e sugere as melhores práticas para reaproveitamento, compostagem e bioenergia.
+            O que oferecemos? Cálculo preciso de resíduos orgânicos. Análise de impacto ambiental. Dicas personalizadas para reaproveitamento. Relatórios e monitoramento em tempo real
+            Junte-se à revolução sustentável! Acesse agora e descubra como reduzir o desperdício e contribuir para um planeta mais verde.
+         </p>
+      </section>
+      <script>
+		let resultado	
+		function calcularSoma() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+			resultado = num1 * num2;
+			document.getElementById("resultado").innerHTML = "O total de kgs a serem recolhidos são: " + resultado + " kgs";
+		}
+		function calculaPreco(){
+			let preco = parseFloat(document.getElementById("preco").value);
+			let resultadoPreco = preco * resultado;
+			document.getElementById("resultadoPreco").innerHTML = "O valor a ser pago pelo recolhimento é de: R$ " + resultadoPreco;
+			}
+    </script>
+</head>
+<body>
+    <h2>Calculo</h2>
+    <input type="number" id="num1" placeholder="Digite o peso recolhido">
+    <input type="number" id="num2" placeholder="Digite quantos dias">
+    <button onclick="calcularSoma()">Calcular</button>
+	<p id="resultado">O total de kgs a serem recolhidos são: </p>
+	<h3>Calculo do valor a ser pago</h3>
+	<input type="number" id="preco" placeholder="Digite o valor por kg">
+	<button onclick="calculaPreco()">Calcular</button>
+	<p id="resultadoPreco">O valor a ser pago pelo recolhimento é de: </p>
+
+</body>
+    </main>
+    <footer>
+      <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+      <p>
+        <i class="fas fa-envelope"></i> contato@reutilizatech.com.br |
+        <i class="fas fa-phone"></i> +55 31 99999-9999 |
+        <i class="fas fa-map-marker-alt"></i> Belo Horizonte, Brasil
+      </p>
+    </footer>
+  </body>
+</html>
